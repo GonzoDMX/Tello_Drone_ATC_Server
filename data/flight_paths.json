@@ -1,0 +1,41 @@
+{
+    "conference_room": {
+        "description": "Conference room observation point",
+        "path": [
+            {"direction": "forward", "distance": 2.0, "delay": 2},
+            {"direction": "right", "distance": 1.5, "delay": 2},
+            {"direction": "up", "distance": 0.5, "delay": 1}
+        ],
+        "capture_points": [
+            {
+                "position": {"direction": "cw", "distance": 90},
+                "frames": 3
+            },
+            {
+                "position": {"direction": "cw", "distance": 90},
+                "frames": 3
+            }
+        ],
+        "return_path": [
+            {"direction": "down", "distance": 0.5, "delay": 1},
+            {"direction": "left", "distance": 1.5, "delay": 2},
+            {"direction": "back", "distance": 2.0, "delay": 2}
+        ]
+    },
+    "hallway": {
+        "description": "Hallway observation point",
+        "path": [
+            {"direction": "forward", "distance": 3.0, "delay": 3},
+            {"direction": "up", "distance": 0.5, "delay": 1}
+        ],
+        "capture_points": [
+            {
+                "frames": 5
+            }
+        ],
+        "return_path": [
+            {"direction": "down", "distance": 0.5, "delay": 1},
+            {"direction": "back", "distance": 3.0, "delay": 3}
+        ]
+    }
+}
